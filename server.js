@@ -51,5 +51,12 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		title: 'Project Page', 
+		message: 'Welcome to the Portfolio'
+	});
+});
+
 
 app.listen(port);
